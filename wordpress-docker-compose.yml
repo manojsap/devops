@@ -20,7 +20,6 @@ services:
 
   #wordpress service
   wordpress:
-
     depends_on:
       - db
     image: wordpress:latest
@@ -44,4 +43,4 @@ volumes:
 
 networks:
   wordpress-network:
-  driver: bridge
+    driver: bridge
